@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+}
+#containerGrid{
+	display: grid;
+	grid-template-rows: 100px auto 50px;
+	min-height: 100vh;
+}
+#header{
+	background-color: black;
+}
+#footer{
+	background-color: black;
+}
+.flex-container  {
+	margin-top: 35px;
+	display: flex;
+	justify-content: flex-end;
+}
+.bar{
+	color: white;
+	display: none;
+}
+li:hover{
+	transform: scale(1.1); 
+}
+.nav li {	
+	display: inline-block;
+	margin-right: 20px;
+	margin-bottom: 10px;
+}
+
+.nav a {
+	color: white;
+	font-family: 'DM Sans', sans-serif;
+ 	font-size: 20px;
+ 	text-decoration: none;
+}
+.main{
+	background: linear-gradient(to left, #000080, black);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.piePagina a{
+	color: white;
+	text-decoration: none;
+}
+.piePagina{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+/*----------------*/
+ @media all and (max-width:  673px){
+ 	.nav a{
+ 		display: none;
+ 	}
+ 	.bar{
+ 		display: block;
+ 		display: flex;
+ 		justify-content: flex-end;
+ 		margin-right: 20px;
+ 	}

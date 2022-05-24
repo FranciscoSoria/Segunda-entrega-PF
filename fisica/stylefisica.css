@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+#containerGrid{
+	display: grid;
+	grid-template-rows: 100px auto 50px;
+	min-height: 100vh;
+}
+#header{
+	background-color: black;
+}
+#footer{
+	background-color: black;
+}
+.flex-container  {
+	margin-top: 35px;
+	display: flex;
+	justify-content: flex-end;
+}
+.bar{
+	color: white;
+	display: none;
+}
+li:hover{
+	transform: scale(1.1); 
+}
+.nav li {	
+	display: inline-block;
+	margin-right: 20px;
+	margin-bottom: 10px;
+
+}
+.nav a {
+	color: white;
+	font-family: 'DM Sans', sans-serif;
+ 	font-size: 20px;
+ 	text-decoration: none;
+}
+
+.main{
+	background: linear-gradient(to left, #000080, black);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.main p {
+ 	text-align: center;
+ 	font-family: 'DM Sans', sans-serif;
+ 	color: white;
+ 	font-size: 25px;
+ 	padding-top: 20px;
+ }
+ @keyframes avanza{
+ 	0%{
+ 		transform: translateX(0);
+ 	}
+ 	50%{
+ 		transform: translateX(1000px);
+ 	}
+ 	100%{
+ 		transform: translateX(0);
+ 	}
+ }
+.box{
+	width: 300px;
+ 	margin-top: 40px;
+}
+
+.imagenes img{
+	width: 100%;
+	animation-name: avanza;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-duration: 5s;
+}
+
+
+.piePagina a{
+	color: white;
+	text-decoration: none;
+}
+.piePagina{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+/*----------------*/
+
+ @media all and (max-width:  673px){
+ 	.nav a{
+ 		display: none;
+ 	}
+ 	.main p{
+	 	font-size: 1rem;
+	 	line-height: 1.5;
+ 	}
+ 	.bar{
+ 		display: block;
+ 		display: flex;
+ 		justify-content: flex-end;
+ 		margin-right: 20px;
+ 	}
+	.imagenes{
+	 	display: flex;
+	 	flex-direction: column;
+	 	justify-content: center;
+	 	align-items: center;
+
+ 	}
+
+ }
+ @media all and (max-width:  925px){
+ 	.main p{
+	 	font-size: 1rem;
+	 	line-height: 1.5;
+ 	}	
+ 	.imagenes{
+	 	display: flex;
+	 	flex-direction: column;
+	 	justify-content: center;
+	 	align-items: center;
+ 	}
+
+ }
